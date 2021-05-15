@@ -1,0 +1,52 @@
+.letter{
+  font-family: 'Grand Hotel', cursive;
+  font-size: 1.5em;
+  padding-top: 30px;
+}
+#sheet{
+  width: 50%;
+  margin: 25px auto;
+  border: 1px solid black;
+  padding: 70px 50px 50px 70px; 
+}
+#date{
+  text-align: center;
+}
+#closure{
+  text-align: right;
+}
+#signature{
+  font-size: 1.75em;
+  text-align: right;
+  padding-top: 10px;
+}
+#ps{
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  width:min-content;
+  margin: 0 auto;
+}
+#footer {
+  display:flex;
+}
+#psText {
+  width: 150px;
+}
+#button {
+  margin-left: 15px;
+}
+#dontPanicButton{
+  background-color: red;
+  color: red;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 30px 25px;
+  border-radius: 50%;  
+  border: solid 5px rgb(204, 8, 8);
+}
+#dontPanicButton:hover{
+  background-color: rgb(253, 30, 30);
+  color: rgb(253, 30, 30);
+  border: solid 5px rgb(250, 14, 14);
+}
