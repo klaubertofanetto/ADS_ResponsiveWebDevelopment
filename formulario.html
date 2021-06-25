@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/formulario.css">
+  <script src="./scripts/formulario.js"></script>
+  <title>Formulário</title>
+</head>
+<body>
+  <form action="get">
+    <div id="formulario">
+      <div class="campo">
+        <label for="cpf">CPF</label>
+        <input onblur="validaCampo(this.id)" placeholder="000.000.000-00" autocomplete="off" type="tel" name="cpf" id="cpf" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" required >
+       <p id="alertacpf" class="alerta-oculto" >Esse campo é obrigatório</p>
+       <p id="alertaDadoInvalidocpf" class="alerta-oculto" >Formato inválido</p>
+      </div>
+
+      <div class="campo">
+        <label for="email">E-mail</label>
+       <input onblur="validaCampo(this.id)" placeholder="usuario@dominio.com" class="masked" autocomplete="off" type="email" name="email" id="email" 
+       required>
+        <p id="alertaemail" class="alerta-oculto" >Esse campo é obrigatório</p>
+        <p id="alertaDadoInvalidoemail" class="alerta-oculto" >Formato inválido</p>
+     </div>
+
+     <div class="campo">
+       <label for="nascimento">Data de Nascimento</label>
+       <input  autocomplete="off" type="date" name="nascimento" id="nascimento">
+     </div>
+
+     <div class="campo">
+        <label for="senha">Senha</label>
+        <input onblur="validaCampo(this.id)" autocomplete="off" type="password" name="senha" id="senha" required>
+        <p id="alertasenha" class="alerta-oculto" >Esse campo é obrigatório</p>
+      </div>
+    </div>
+
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
